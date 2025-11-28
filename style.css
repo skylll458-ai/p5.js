@@ -1,0 +1,41 @@
+/* 전체적인 페이지 여백과 글꼴 설정 (선택 사항) */
+body {
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* --- 핵심 부분 --- */
+/* 프로젝트 링크들을 감싸는 영역을 Grid 컨테이너로 설정 */
+#projects {
+    display: grid;
+    /* 2개의 열을 만들고, 각 열이 동일한 너비를 갖도록 설정 */
+    grid-template-columns: 1fr 1fr; 
+    /* 그리드 아이템 사이의 간격 설정 */
+    gap: 20px;
+}
+
+/* 각 프로젝트 링크 아이템 스타일링 */
+.project {
+    border: 1px solid #ccc;
+    padding: 40px;
+    text-align: center;
+    border-radius: 8px; /* 모서리를 둥글게 */
+}
+
+/* 링크 텍스트 스타일링 */
+.project a {
+    text-decoration: none; /* 밑줄 제거 */
+    color: #333;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* 마우스를 올렸을 때 배경색 변경 (선택 사항) */
+.project:hover {
+    background-color: #f0f0f0;
+}
